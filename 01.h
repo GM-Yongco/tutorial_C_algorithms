@@ -12,6 +12,7 @@
 #include <string.h>
 
 typedef enum{False, True}BOOLEAN;
+//this makes (False == 0 && True == 1)
 
 // =======================================================================
 // MISC FUNCTIONS
