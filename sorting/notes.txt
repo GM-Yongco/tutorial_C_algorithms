@@ -1,0 +1,50 @@
+==================================================
+ MAIN
+==================================================
+
+sorting algorithms covered
+	review:
+		bubble
+		selection
+		insertion
+	new:
+		shell
+		heap
+		quick
+		merge
+		counting
+		bucket
+		radix
+		strand
+		gnome
+		tournament
+		comb
+
+==================================================
+ BUCKET SORT
+==================================================
+this is first cuz i needed to present this
+
+steps
+	go through one loop to insert the values into a buckets with ranges in order
+		usually closed hash table
+		ex 1: 
+			you could insert to the hash table a list of decimals 
+			the hash value based on their first decimal digit
+			and the hash table size would be 10 starting from 0-9
+	we then sort each bucket
+		GeeksGorGeeks uses insertion sort
+	we then assume the values are sorted and insert each value in order in the bucket and by order of buckets
+	
+lil bit by jules:
+	if you know the distribution of the values you can make more efficient bucket
+		i assume bucket sort will perform worse with imbalanced buckets
+			because insertion sort within a bucket scales time complexity exponentially
+			while the number of buckets scales the time complexity linearly
+		we can make the range distribution of the buckets/hash value 
+			be based on the area under the distribution curve
+			giving better chances of a balanced bucket distribution
+
+==================================================
+ RADIX SORT
+==================================================
