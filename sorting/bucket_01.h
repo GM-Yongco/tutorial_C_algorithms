@@ -38,7 +38,7 @@ void section(char* section_name){
 		message_len = 49;
 	}
 
-	memcpy(new_string + 2, section_name, );
+	memcpy(new_string + 2, section_name, strlen(section_name));
 	
 	// places a space between the section_name and the dashes
 	new_string[strlen(section_name) + 2] = ' ';
@@ -50,3 +50,41 @@ void section(char* section_name){
 // CORE FUNCTIONS 1
 // =======================================================================
 
+typedef struct node{
+	int element;
+	struct node* next;
+}*LINK, NODE;
+
+void insert_first(int element, LINK* old_link){
+	LINK new_link = NULL;
+	new_link = (LINK)malloc(sizeof(NODE));
+
+	// add check if memallocaiton was success
+
+	new_link->element = element;
+	new_link->next = *old_link;
+	(*old_link)->next = new_link;
+}
+
+// =======================================================================
+
+#define SIZE 100
+#define NUMBER_OF_BUCKETS 10
+
+// hash / which bucket
+int bucket_number(int element){
+	return element % NUMBER_OF_BUCKETS;
+}
+
+void sort(int array[SIZE]){
+
+	//define the buckets
+	LINK buckets[NUMBER_OF_BUCKETS];
+	memset(buckets, 0, sizeof(buckets));
+
+	// insert everything in their buckets
+	int i;
+	for(i = 0; i <= SIZE; i++){
+		insert_first(array[i], &(buckets[bucket_number(array[i])]));
+	}
+}
