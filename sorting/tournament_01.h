@@ -1,11 +1,11 @@
-// =======================================================================
-// Author		: G.M. Yongco #BeSomeoneWhoCanStandByShinomiya
-// Date			: ur my date uwu
-// rules		:
-//		use snake case
-//		all user defined typedefs should be all caps
-// Description	: Code that will impress u ;)
-// =======================================================================
+/* ==========================================================================
+Author		: G.M. Yongco #BeSomeoneWhoCanStandByShinomiya
+Date			: ur my date uwu
+rules		:
+	use snake case
+	all user defined typedefs should be all caps
+Description	: Code that will impress u ;)
+========================================================================== */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -82,6 +82,7 @@ int* sort(int elements[NUMBER_OF_ELEMENTS]){
 		}
 	}
 	
+	// sorting portion
 	for(j = 0, heap_index_parent = heap_size_difference; 
 		j<NUMBER_OF_ELEMENTS; 
 		j++){
@@ -93,8 +94,10 @@ int* sort(int elements[NUMBER_OF_ELEMENTS]){
 			heap_index_child_right = heap_index_child_left + 1;
 			
 			printf("\n\n parent\t:[%d]", heap_index_parent);
-			printf("\n [%d] = %d vs [%d] = %d", heap_index_child_left, elements[heap[heap_index_child_left]], heap_index_child_right, elements[heap[heap_index_child_right]]);
-			
+			printf("\n [%d] = %d", heap_index_child_left, elements[heap[heap_index_child_left]]);
+			printf(" vs ");
+			printf("[%d] = %d", heap_index_child_right, elements[heap[heap_index_child_right]]);
+
 			if(heap_index_child_left == SENTINEL){
 				heap[heap_index_parent] = heap[heap_index_child_right];
 			}else if(heap_index_child_right == SENTINEL){
