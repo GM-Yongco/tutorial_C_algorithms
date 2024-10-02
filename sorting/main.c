@@ -1,10 +1,12 @@
-// =======================================================================
-// Author		: G.M. Yongco #BeSomeoneWhoCanStandByShinomiya
-// Date			: ur my date uwu
-// rules		:
-//		use snake case
-//		all user defined typedefs should be all caps
-// Description	: bucket sorting elements with no repetitions
+/* =======================================================================
+author		: G.M. Yongco #BeSomeoneWhoCanStandByShinomiya
+date		: ur my date uwu
+format		:
+	used snake case
+	all user defined types are all caps
+description	: the file that tests and executes the sorting algorithms
+// ======================================================================= */
+// HEADERS
 // =======================================================================
 
 #include <stdio.h>
@@ -15,7 +17,8 @@
 // #include "bucket_01.h"
 // #include "bucket_02.h"
 // #include "bucket_03_histogram.h"
-#include "tournament_01.h"
+// #include "tournament_01.h"
+#include "comb.h"
 
 // =======================================================================
 // MAIN
