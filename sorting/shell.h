@@ -20,9 +20,27 @@ Description	: Code that will impress u ;)
 // CORE FUNCTIONS 1
 // =======================================================================
 
+void swap(int* a, int* b){
+	int temp = *a;
+	*a = *b;
+	*b = temp;
+}
+
 int* sort(int elements[NUMBER_OF_ELEMENTS]){
-	int* elements_sorted = (int*)malloc(sizeof(int)*NUMBER_OF_ELEMENTS);
-	memset(elements_sorted, 0, sizeof(int)*NUMBER_OF_ELEMENTS);
-	
-	return elements_sorted;
+	int gap, i, j;
+	for(gap = NUMBER_OF_ELEMENTS/2;
+		gap > 0;
+		gap = gap/2
+	){
+		for(i = gap;
+			i < NUMBER_OF_ELEMENTS;
+			i++){	
+			for(j = i;
+				elements[j] > elements[j - gap] && j >= gap;
+				j -= gap){		
+				swap(elements + j, elements + j - gap);
+			}
+		}
+	}
+	return elements;
 }
