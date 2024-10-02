@@ -19,7 +19,9 @@ description	: the file that tests and executes the sorting algorithms
 // #include "bucket_03_histogram.h"
 // #include "tournament_01.h"
 // #include "comb.h"
-#include "shell.h"
+// #include "shell.h"
+// #include "selection_01.h"
+#include "selection_02_reccursive.h"
 
 // =======================================================================
 // MAIN
