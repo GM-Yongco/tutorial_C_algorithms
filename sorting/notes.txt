@@ -21,6 +21,22 @@ sorting algorithms covered
 		comb
 
 ==================================================
+ TEMPLATE
+==================================================
+
+creator				:
+when				: 
+time complexity		:
+	best			:
+	average			:
+	worst			:
+in_place			: 
+space complexity	: 
+stable				: 
+notes
+	:
+
+==================================================
  BUCKET SORT
 ==================================================
 this is first cuz i needed to present this
@@ -48,3 +64,101 @@ lil bit by jules:
 ==================================================
  RADIX SORT
 ==================================================
+
+
+==================================================
+ TOURNAMENT SORT
+==================================================
+
+creator				: cant attribute
+when				: 
+time complexity:
+	always			: O(n log(n)) aka log-linear time complexity
+in_place			: false
+space complexity	: O(n) additional space for the tournament tree structure
+stable				: false
+notes
+	: winner/looser tree aka max/min tree
+	: 
+
+==================================================
+ BUBBLE SORT
+==================================================
+
+creator				: Edware Harry Friend
+when				: 
+time complexity		: O(n^2)
+	best			:
+	average			: O(n^2)
+	worst			: O(n^2)
+in_place			: yes
+space complexity	: O(1)
+stable				: yes
+notes
+	: Edware Harry Friend, first known person to describe the algo in a math paper
+	: Kenneth E. Iverson coined is current term
+
+==================================================
+ COMB SORT
+==================================================
+
+creator				: Włodzimierz Dobosiewicz and Artur Borowy
+when				: 1980
+time complexity		: O(n^2)
+	best			:
+	average			: O(n^2)  
+	worst			: O(n log(n))
+in_place			: yes
+space complexity	: O(1)
+stable				: no
+notes
+	: is basically gapped bubble sort
+	: has fewwer comparisons than bubble sort
+
+==================================================
+ SHELL
+==================================================
+
+creator				: Donald shel
+when				: 1952
+time complexity		:
+	best			: O(n log(n))
+	average			: O(n^(5/4))
+	worst			: O(n^2)
+in_place			: yes
+space complexity	: O(1)
+stable				: yes
+notes
+	: basically gapped selection sort
+
+==================================================
+ INSERTION
+==================================================
+
+creator				: Donald Knuth's
+when				: 1968
+time complexity		: O(n^2)
+	best			:
+	average			:
+	worst			:
+in_place			: yes
+space complexity	: O(1)
+stable				: yes
+notes
+	: from Donald Knuth's book "The Art of Computer Programming", titled "Fundamental Algorithms".
+
+==================================================
+ SELCTION
+==================================================
+
+creator				:
+when				: 
+time complexity		:
+	best			:
+	average			:
+	worst			:
+in_place			: 
+space complexity	: 
+stable				: 
+notes
+	:
