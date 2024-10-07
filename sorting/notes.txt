@@ -24,14 +24,14 @@ sorting algorithms covered
  TEMPLATE
 ==================================================
 
-creator				:
+creator				: 
 when				: 
-time complexity		:
-	best			:
-	average			:
-	worst			:
-in_place			: 
+time complexity		: 
+	best			: 
+	average			: 
+	worst			: 
 space complexity	: 
+in_place			: 
 stable				: 
 notes
 	:
@@ -155,10 +155,46 @@ creator				:
 when				: 
 time complexity		:
 	best			:
-	average			:
+	average			: 
 	worst			:
 in_place			: 
 space complexity	: 
-stable				: 
+stable				: 	
 notes
 	:
+
+==================================================
+==================================================
+==================================================
+ QUICK
+==================================================
+
+creator				: Tony Hoare
+when				: 1959 but published at 1961
+time complexity		: 
+	best			: 
+	average			: O(n log(n))
+	worst			: O(n^2)
+space complexity	: O(log(n)) - O(n) : only regarding the stack recursion memory tho
+in_place			: true
+stable				: false
+notes
+	: lomuto is the weird version
+	: cassmates people prefer hoare for mental complexity
+	: idk who dafq is lomuto
+
+==================================================
+ Merge
+==================================================
+==================================================
+ STRAND
+==================================================
+==================================================
+ COUNTING
+==================================================
+==================================================
+ Radix
+==================================================
+==================================================
+ BUCKET
+==================================================
