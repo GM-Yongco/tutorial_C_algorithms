@@ -1,11 +1,12 @@
-// =======================================================================
-// Author		: G.M. Yongco #BeSomeoneWhoCanStandByShinomiya
-// Date			: ur my date uwu
-// rules		:
-//		use snake case
-//		all user defined typedefs should be all caps
-// Description	: Code that will impress u ;)
-// =======================================================================
+/* =======================================================================
+author		: G.M. Yongco #BeSomeoneWhoCanStandByShinomiya
+date		: ur my date uwu
+format		:
+	used snake case
+	all user defined types are all caps
+description	: Code that will impress u ;)
+	helper functions that some header file will use
+// ======================================================================= */
 // DEFINE CLAUSE
 // =======================================================================
 
@@ -22,30 +23,35 @@
 
 typedef enum{False, True}BOOLEAN;
 
-#define NUMBER_OF_ELEMENTS 200
+// #define NUMBER_OF_ELEMENTS 200
 
-int elements[NUMBER_OF_ELEMENTS] = {
-	34, 7, 23, 32, 5, 62, 72, 9, 12, 87,
-	14, 45, 68, 3, 99, 28, 19, 54, 76, 10,
-	1, 57, 93, 16, 82, 21, 90, 6, 41, 35,
-	63, 50, 73, 25, 89, 40, 55, 48, 31, 4,
-	77, 85, 17, 26, 97, 22, 91, 11, 79, 8,
-	13, 66, 52, 2, 84, 94, 60, 88, 39, 49,
-	92, 24, 56, 81, 36, 46, 20, 98, 67, 38,
-	64, 33, 44, 95, 27, 58, 29, 18, 47, 75,
-	42, 78, 43, 86, 0, 69, 74, 53, 30, 83,
-	70, 61, 71, 59, 15, 80, 65, 37, 51, 96,
-	34, 7, 23, 32, 5, 62, 72, 9, 12, 87,
-	14, 45, 68, 3, 99, 28, 19, 54, 76, 10,
-	1, 57, 93, 16, 82, 21, 90, 6, 41, 35,
-	63, 50, 73, 25, 89, 40, 55, 48, 31, 4,
-	77, 85, 17, 26, 97, 22, 91, 11, 79, 8,
-	13, 66, 52, 2, 84, 94, 60, 88, 39, 49,
-	92, 24, 56, 81, 36, 46, 20, 98, 67, 38,
-	64, 33, 44, 95, 27, 58, 29, 18, 47, 75,
-	42, 78, 43, 86, 0, 69, 74, 53, 30, 83,
-	70, 61, 71, 59, 15, 80, 65, 37, 51, 96
-};
+// int elements[NUMBER_OF_ELEMENTS] = {
+// 	34, 7, 23, 32, 5, 62, 72, 9, 12, 87,
+// 	14, 45, 68, 3, 99, 28, 19, 54, 76, 10,
+// 	1, 57, 93, 16, 82, 21, 90, 6, 41, 35,
+// 	63, 50, 73, 25, 89, 40, 55, 48, 31, 4,
+// 	77, 85, 17, 26, 97, 22, 91, 11, 79, 8,
+// 	13, 66, 52, 2, 84, 94, 60, 88, 39, 49,
+// 	92, 24, 56, 81, 36, 46, 20, 98, 67, 38,
+// 	64, 33, 44, 95, 27, 58, 29, 18, 47, 75,
+// 	42, 78, 43, 86, 0, 69, 74, 53, 30, 83,
+// 	70, 61, 71, 59, 15, 80, 65, 37, 51, 96,
+// 	34, 7, 23, 32, 5, 62, 72, 9, 12, 87,
+// 	14, 45, 68, 3, 99, 28, 19, 54, 76, 10,
+// 	1, 57, 93, 16, 82, 21, 90, 6, 41, 35,
+// 	63, 50, 73, 25, 89, 40, 55, 48, 31, 4,
+// 	77, 85, 17, 26, 97, 22, 91, 11, 79, 8,
+// 	13, 66, 52, 2, 84, 94, 60, 88, 39, 49,
+// 	92, 24, 56, 81, 36, 46, 20, 98, 67, 38,
+// 	64, 33, 44, 95, 27, 58, 29, 18, 47, 75,
+// 	42, 78, 43, 86, 0, 69, 74, 53, 30, 83,
+// 	70, 61, 71, 59, 15, 80, 65, 37, 51, 96
+// };
+
+#define NUMBER_OF_ELEMENTS 10
+
+int elements[NUMBER_OF_ELEMENTS] = {1, 5, 4, 7, 3, 2, 1, 7, 5, 3};
+
 
 // =======================================================================
 // MISC FUNCTIONS
@@ -90,6 +96,40 @@ void display_arr(int arr[], int arr_size){
 		}
 	}
 	printf("}");
+}
+
+void swap(int* a, int* b){
+	int temp = *a;
+	*a = *b;
+	*b = temp;
+}
+
+void test_sorted_ascending(int elements[NUMBER_OF_ELEMENTS]){
+	int i;
+	int flag = 0;
+	for(i = 0; i< NUMBER_OF_ELEMENTS - 1 && flag == 0; i++){
+		if(elements[i] > elements[i+1]){
+			printf("\nnot sorted ascending");
+			flag = 1;
+		}
+	}
+	if(flag == 0){
+		printf("\nsorted ascending :DDD");
+	}
+}
+
+void test_sorted_descending(int elements[NUMBER_OF_ELEMENTS]){
+	int i;
+	int flag = 0;
+	for(i = 0; i< NUMBER_OF_ELEMENTS - 1 && flag == 0; i++){
+		if(elements[i] < elements[i+1]){
+			printf("\nnot sorted descending");
+			flag = 1;
+		}
+	}
+	if(flag == 0){
+		printf("\nsorted descending :DDD");
+	}
 }
 
 // =======================================================================
