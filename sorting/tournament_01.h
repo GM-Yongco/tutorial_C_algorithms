@@ -1,6 +1,6 @@
 /* ==========================================================================
 Author		: G.M. Yongco #BeSomeoneWhoCanStandByShinomiya
-Date			: ur my date uwu
+Date		: ur my date uwu
 rules		:
 	use snake case
 	all user defined typedefs should be all caps
