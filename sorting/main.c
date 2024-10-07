@@ -23,8 +23,11 @@ description	: the file that tests and executes the sorting algorithms
 // #include "selection_01.h"
 // #include "selection_02_reccursive.h"
 
-#include "quick_hoare.h"
+// #include "quick_hoare.h"
 // #include "quick_lomuto.h"
+// #include "merge.h"
+// #include "strand.h"
+#include "gnome.h"
 
 // =======================================================================
 // MAIN

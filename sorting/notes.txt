@@ -62,11 +62,6 @@ lil bit by jules:
 			giving better chances of a balanced bucket distribution
 
 ==================================================
- RADIX SORT
-==================================================
-
-
-==================================================
  TOURNAMENT SORT
 ==================================================
 
@@ -186,15 +181,58 @@ notes
 ==================================================
  Merge
 ==================================================
+
+creator				: Jhon Von Nueman
+when				: 1945
+time complexity		: 
+	best			: 
+	average			: O(n log(n))
+	worst			: 
+space complexity	: O(n) : because of auxiliary array
+in_place			: false
+stable				: true
+notes
+	: total memory used for auxiliary arrays would be n log n on average if we didnt free the aux arrays
+	: it would also be n log n if the recursion all happens at the same time
+
 ==================================================
  STRAND
 ==================================================
+
+creator				: 
+when				: 1997
+time complexity		: 
+	best			: 
+	average			: O(n^2 /2)
+	worst			: O(n^2)
+space complexity	: O(n) : because of auxiliary array
+in_place			: false
+stable				: true
+notes
+	: total memory used for auxiliary arrays would be n log n on average if we didnt free the aux arrays
+	: it would also be n log n if the recursion all happens at the same time
 ==================================================
- COUNTING
+ COUNTING	
 ==================================================
 ==================================================
  Radix
 ==================================================
+
+
+==================================================
+ GNOME
+==================================================
+creator				: Hamid Sarbazi-Azad
+when				: 
+time complexity		: 
+	best			: 
+	average			: O(n^2)
+	worst			: O(n^2)
+space complexity	: O(1)
+in_place			: true
+stable				: true
+notes
+	:
 ==================================================
  BUCKET
 ==================================================
