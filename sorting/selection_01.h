@@ -20,12 +20,6 @@ Description	: Code that will impress u ;)
 // CORE FUNCTIONS 1
 // =======================================================================
 
-void swap(int* a, int* b){
-	int temp = *a;
-	*a = *b;
-	*b = temp;
-}
-
 int* sort(int elements[NUMBER_OF_ELEMENTS]){
 	
 	int i, j, biggests_index;
