@@ -39,6 +39,10 @@ int main(){
 	section("SORTED");
 	display_arr(elements_sorted, NUMBER_OF_ELEMENTS);
 
+	section("SORTED TEST");
+	test_sorted_ascending(elements_sorted);
+	test_sorted_descending(elements_sorted);
+
 	section("END");
 	return 0;
 }
